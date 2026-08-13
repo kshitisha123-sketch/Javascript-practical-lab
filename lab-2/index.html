@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Grade Predictor</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <header>
+            <h1>🎓 Student Grade Predictor</h1>
+            <p>Calculate your total, average and final grade</p>
+        </header>
+
+
+        <!-- Student Information -->
+        <section class="student-card">
+
+            <h2>Student Information</h2>
+
+            <div class="input-group">
+
+                <div class="input-box">
+                    <label for="studentName">Student Name</label>
+                    <input
+                        type="text"
+                        id="studentName"
+                        placeholder="Enter your name"
+                    >
+                </div>
+
+                <div class="input-box">
+                    <label for="rollNumber">Roll Number</label>
+                    <input
+                        type="text"
+                        id="rollNumber"
+                        placeholder="Enter roll number"
+                    >
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Marks -->
+        <section class="marks-card">
+
+            <h2>📚 Enter Subject Marks</h2>
+
+            <div class="marks-grid">
+
+                <div class="subject">
+                    <label for="javascript">JavaScript</label>
+
+                    <input
+                        type="number"
+                        id="javascript"
+                        min="0"
+                        max="100"
+                        placeholder="0 - 100"
+                    >
+                </div>
+
+
+                <div class="subject">
+                    <label for="dbms">DBMS</label>
+
+                    <input
+                        type="number"
+                        id="dbms"
+                        min="0"
+                        max="100"
+                        placeholder="0 - 100"
+                    >
+                </div>
+
+
+                <div class="subject">
+                    <label for="networking">Networking</label>
+
+                    <input
+                        type="number"
+                        id="networking"
+                        min="0"
+                        max="100"
+                        placeholder="0 - 100"
+                    >
+                </div>
+
+
+                <div class="subject">
+                    <label for="os">Operating System</label>
+
+                    <input
+                        type="number"
+                        id="os"
+                        min="0"
+                        max="100"
+                        placeholder="0 - 100"
+                    >
+                </div>
+
+            </div>
+
+
+            <button onclick="calculateGrade()">
+                Calculate Grade
+            </button>
+
+        </section>
+
+
+        <!-- Result -->
+        <section class="result-card" id="resultCard">
+
+            <h2>📊 Result</h2>
+
+            <div class="student-result">
+                <p>
+                    Student:
+                    <strong id="resultName">-</strong>
+                </p>
+
+                <p>
+                    Roll Number:
+                    <strong id="resultRoll">-</strong>
+                </p>
+            </div>
+
+
+            <div class="result-grid">
+
+                <div class="result-box">
+                    <span>Total Marks</span>
+                    <strong id="totalMarks">0</strong>
+                </div>
+
+                <div class="result-box">
+                    <span>Average</span>
+                    <strong id="averageMarks">0%</strong>
+                </div>
+
+                <div class="result-box">
+                    <span>Grade</span>
+                    <strong id="grade">-</strong>
+                </div>
+
+            </div>
+
+
+            <div class="status" id="status">
+                Enter marks to see your result.
+            </div>
+
+        </section>
+
+
+        <!-- Console Note -->
+        <div class="console-note">
+
+            <p>
+                💡 Open <strong>Developer Console (F12)</strong>
+                to see the JavaScript calculations and data types.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

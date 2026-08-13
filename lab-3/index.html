@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Shopping Cart</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>Smart Shopping Cart</h1>
+            <p>Billing & Discount Calculator</p>
+        </header>
+
+        <section class="products">
+
+            <div class="product-card">
+                <h2>📓 Notebook</h2>
+                <p>Price: ₹60</p>
+                <p>Quantity: 3</p>
+                <p class="subtotal">Subtotal: ₹180</p>
+            </div>
+
+            <div class="product-card">
+                <h2>🖊️ Pen</h2>
+                <p>Price: ₹10</p>
+                <p>Quantity: 5</p>
+                <p class="subtotal">Subtotal: ₹50</p>
+            </div>
+
+            <div class="product-card">
+                <h2>🎒 Bag</h2>
+                <p>Price: ₹800</p>
+                <p>Quantity: 1</p>
+                <p class="subtotal">Subtotal: ₹800</p>
+            </div>
+
+        </section>
+
+
+        <section class="receipt">
+
+            <h2>🧾 Shopping Receipt</h2>
+
+            <div class="receipt-row">
+                <span>Notebook × 3</span>
+                <span>₹180.00</span>
+            </div>
+
+            <div class="receipt-row">
+                <span>Pen × 5</span>
+                <span>₹50.00</span>
+            </div>
+
+            <div class="receipt-row">
+                <span>Bag × 1</span>
+                <span>₹800.00</span>
+            </div>
+
+            <hr>
+
+            <div class="receipt-row">
+                <span>Grand Total</span>
+                <strong>₹1030.00</strong>
+            </div>
+
+            <div class="receipt-row">
+                <span>Discount</span>
+                <span>5%</span>
+            </div>
+
+            <div class="receipt-row">
+                <span>Discount Amount</span>
+                <span>₹51.50</span>
+            </div>
+
+            <div class="receipt-row">
+                <span>After Discount</span>
+                <span>₹978.50</span>
+            </div>
+
+            <div class="receipt-row">
+                <span>GST (18%)</span>
+                <span>₹176.13</span>
+            </div>
+
+            <hr>
+
+            <div class="final-row">
+                <span>Final Payable</span>
+                <strong>₹1154.63</strong>
+            </div>
+
+            <div class="shipping">
+                🚚 Shipping: <strong>FREE</strong>
+            </div>
+
+            <div class="points">
+                ⭐ Loyalty Points: <strong>11.55</strong>
+            </div>
+
+        </section>
+
+
+        <div class="console-note">
+            <p>
+                💡 Open <strong>Developer Console (F12)</strong>
+                to see the JavaScript calculations.
+            </p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
